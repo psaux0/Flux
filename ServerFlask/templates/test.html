@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flux Control Panel</title>
+		<style type="text/css">
+		.bt {
+			width: 40%;
+			height: 10%;
+			font-size: 2em;
+		}
+		h1 {
+			font-size: 3em;
+		}
+		body {
+			text-align: center;
+		}
+		</style>
+	</head>
+	<body>
+		<form id="myForm" action="{{url_for('login')}}" method="post">
+			<h1>Heating Status</h1>
+			<h1 id="sts" style="color: red">{{ name }}...</h1>
+			<h1 id="sts" style="color: green">Temperature: {{ temp }} C</h1>
+			<input type="text" name="fname" value= "0" id="heat" style="display: none">
+			<input class="bt" type="button" onclick="myfunction()" value="Heating"/>
+			<br/>
+			<br/>
+			<input class="bt" type="button" onclick="myfunction2()" value="Stopping"/>
+			<br/>
+			<br/>
+			<input class="bt" type="button" onclick="myfunction3()" value="Start Sensor"/>
+			<br/>
+			<br/>			
+			<input class="bt" type="button" onclick="myfunction4()" value="Halt Sensor"/>
+		</form>
+		<script type="text/javascript">
+			function myfunction() {
+				document.getElementById("heat").value = "1";
+				document.getElementById("myForm").submit();
+			}
+			function myfunction2() {
+				document.getElementById("heat").value = "0";
+				document.getElementById("myForm").submit();
+			}
+			function myfunction3() {
+				document.getElementById("heat").value = "3";
+				document.getElementById("myForm").submit();
+			}
+			function myfunction4() {
+				document.getElementById("heat").value = "4";
+				document.getElementById("myForm").submit();
+			}
+		</script>
+	</body>
+</html>

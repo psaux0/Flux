@@ -1,0 +1,13 @@
+<html>
+<head>
+	<script type="text/javascript">
+	var password = "flux";
+	var p = prompt("Enter the password ","");
+	while(p.toLowerCase() != password){
+		p = prompt("Enter the password ","");		
+	}
+	window.location = "{{url_for('test')}}";
+	</script>
+</head>
+<body></body>
+</html>
