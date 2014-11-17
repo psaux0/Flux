@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fluxapp.MainActivity" >
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOff"
+        android:text="@string/startheating"
+        android:layout_marginBottom="44dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="@string/waiting"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:text="@string/stopheating" />
+
+    <Button
+        android:id="@+id/bBTon"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOn"
+        android:layout_marginBottom="22dp"
+        android:text="@string/BTon" />
+
+    <Button
+        android:id="@+id/bBToff"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOn"
+        android:layout_alignRight="@+id/btnOn"
+        android:layout_alignEnd="@+id/bBTon"
+        android:layout_marginBottom="22dp"
+        android:text="@string/BToff" />
+
+</RelativeLayout>
