@@ -8,5 +8,5 @@ Flux
 > - Microcontroller side codes based on Arduino
 > - PCB for wiring
 
-**Flux** comes absolutely with out warranty and it is published under GPL.
+**Flux** comes absolutely with out warranty and it is published under GPL.  
 Visit the project page at [Flux](https://psaux0.github.com/Flux)
